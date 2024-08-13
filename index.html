@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado - DC COMIC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>DC COMIC</h1>
+        </header>
+
+        <div id="container">
+            <div id="lateral">
+                <h2>Resultados</h2>
+                <br>
+                <label>Ganados:</label>
+                <br>
+                <input type="text" name="txtGanados" id="txtGanados" value="0" disabled>
+                <br>
+
+                <label>Perdidos:</label>
+                <br>
+                <input type="text" name="txtPerdidos" id="txtPerdidos" value="0" disabled>
+                <br><br>
+            </div>
+
+            <div id="contenido">
+                <div class="text">
+                    <div class="ahorcado">Intentos restantes: <span id="intentosRestantes">10</span></div>
+                    <div class="palabra" id="palabra"></div>
+                    <div class="mensaje" id="mensaje"></div> 
+                    <div class="figura" id="figura">
+                    <img id="imagenAhorcado" src="img/base0.png" alt="Ahorcado">
+                    <button class="Iniciar" id="botonEmpezar" onclick="iniciarJuego()">Jugar</button>
+                </div>
+                </div>
+               
+
+                <div class="teclado" id="teclado">
+                    <button onclick="LetraSeleccionada('A')">A</button>
+                    <button onclick="LetraSeleccionada('B')">B</button>
+                    <button onclick="LetraSeleccionada('C')">C</button>
+                    <button onclick="LetraSeleccionada('D')">D</button>
+                    <button onclick="LetraSeleccionada('E')">E</button>
+                    <button onclick="LetraSeleccionada('F')">F</button>
+                    <button onclick="LetraSeleccionada('G')">G</button>
+                    <button onclick="LetraSeleccionada('H')">H</button>
+                    <button onclick="LetraSeleccionada('I')">I</button>
+                    <button onclick="LetraSeleccionada('J')">J</button>
+                    <button onclick="LetraSeleccionada('K')">K</button>
+                    <button onclick="LetraSeleccionada('L')">L</button>
+                    <button onclick="LetraSeleccionada('M')">M</button>
+                    <button onclick="LetraSeleccionada('N')">N</button>
+                    <button onclick="LetraSeleccionada('O')">O</button>
+                    <button onclick="LetraSeleccionada('P')">P</button>
+                    <button onclick="LetraSeleccionada('Q')">Q</button>
+                    <button onclick="LetraSeleccionada('R')">R</button>
+                    <button onclick="LetraSeleccionada('S')">S</button>
+                    <button onclick="LetraSeleccionada('T')">T</button>
+                    <button onclick="LetraSeleccionada('U')">U</button>
+                    <button onclick="LetraSeleccionada('V')">V</button>
+                    <button onclick="LetraSeleccionada('W')">W</button>
+                    <button onclick="LetraSeleccionada('X')">X</button>
+                    <button onclick="LetraSeleccionada('Y')">Y</button>
+                    <button onclick="LetraSeleccionada('Z')">Z</button>
+                </div>
+            </div>
+        </div>
+
+        <footer></footer>
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
